@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  <title>Kirby House</title>
+</head>
+<body>
+  <a-scene>
+    <a-sky color="#1793B4"></a-sky>
+    <!-- Modelo de la casa -->
+    <a-gltf-model src="assets/escenario_-_animal_crossing.glb" position="0 0 -5" scale="0.050 0.050 0.050"></a-gltf-model>
+    
+    <!-- Cámara fuera del centro, en posición ajustada -->
+    <a-camera position="2 1.6 4" camera look-controls="pointerLockEnabled: true" wasd-controls="speed: 20;"></a-camera>
+
+    <!-- Kirbis -->
+     <a-gltf-model src="assets/kirby.glb" position="3.290 1.327 -5" scale="5.000 5.000 5.000"></a-gltf-model>
+     <a-gltf-model src="assets/kirby copy.glb" position="-1.253 4.988 -7.474" scale="5.000 5.000 5.000"></a-gltf-model>
+  </a-scene>
+</body>
+</html>
